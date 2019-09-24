@@ -1,17 +1,22 @@
-from urllib.request import urlretrieve
-import pandas as pd
-import matplotlib.pyplot as plt
-
-url = 'https://s3.amazonaws.com/assets.datacamp.com/production/course_1606/datasets/winequality-red.csv'
+"""Practice using API to pull data"""
 
 
-urlretrieve(url, '2017.csv')
 
-df = pd.read_csv('2017.csv', sep=';')
+import requests
 
-print(df.head())
+url = 'https://www.wikipedia.org/'
 
-pd.DataFrame.hist(df.iloc[:, 0:1])
-plt.xlabel('fixed acidity (g(tartaric acid)/dm$^3$)')
-plt.ylabel('count')
-plt.show()
+r = requests.get(url)
+
+text = r.text
+
+print(text)
+
+# Assign URL to variable: url
+url = 'http://www.omdbapi.com/?apikey=72bc447a&t=the+social+network'
+
+# Package the request, send the request and catch the response: r
+r = requests.get(url)
+
+# Print the text of the response
+print(r.text)
