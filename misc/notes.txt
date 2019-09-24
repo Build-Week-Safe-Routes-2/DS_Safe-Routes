@@ -134,3 +134,7 @@
             12 Freezing Rain or Drizzle
             98 Not Reported
             99 Unknown
+
+
+09/24
+- beginning to work on API
