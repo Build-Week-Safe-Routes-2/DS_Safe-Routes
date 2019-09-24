@@ -12,7 +12,7 @@ text = r.text
 
 print(text)
 
-# Assign URL to variable: url
+# pull using specific db address and api key
 url = 'http://www.omdbapi.com/?apikey=72bc447a&t=the+social+network'
 
 # Package the request, send the request and catch the response: r
