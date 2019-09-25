@@ -138,3 +138,4 @@
 
 09/24
 - beginning to work on API
+- practice api file, pulling from wikipedia, movie database
