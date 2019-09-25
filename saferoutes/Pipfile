@@ -6,6 +6,15 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+flask = "*"
+flask-cors = "*"
+pandas = "*"
+numpy = "*"
+category-encoders = "*"
+gunicorn = "*"
+xgboost = "*"
+scikit-learn = "==0.21.2"
+joblib = "*"
 
 [requires]
 python_version = "3.7"
