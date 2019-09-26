@@ -60,16 +60,15 @@ fig = go.Figure(data=go.Scattergeo(
         mode = 'markers',
         marker = dict(
             size = 8,
-            opacity = 0.8,
+            opacity = 0.5,
             reversescale = True,
             autocolorscale = False,
             symbol = 'circle'),
-        marker_color = top_100['STATE'],
+        marker_color = '#13F1FC',
         hoverinfo = 'text',
         ))
 
 fig.update_layout(
-        title = 'Top 100 US Accident Cities From 2015 - 2017',
         geo_scope='usa',
     )
 fig.show()
