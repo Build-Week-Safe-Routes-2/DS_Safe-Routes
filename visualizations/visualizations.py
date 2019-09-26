@@ -60,7 +60,7 @@ fig = go.Figure(data=go.Scattergeo(
         mode = 'markers',
         marker = dict(
             size = 8,
-            opacity = 0.5,
+            opacity = 0.75,
             reversescale = True,
             autocolorscale = False,
             symbol = 'circle'),
