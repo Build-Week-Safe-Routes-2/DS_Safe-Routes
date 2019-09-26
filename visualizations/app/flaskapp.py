@@ -6,9 +6,9 @@ import pandas as pd
 # import matplotlib + seaborn for exploratory data analysis
 import plotly.graph_objects as go
 
-app = Flask(__name__)
+APP = Flask(__name__)
 
-@app.route("/")
+@APP.route("/")
 def graph():
     
     return render_template('top100.html')
