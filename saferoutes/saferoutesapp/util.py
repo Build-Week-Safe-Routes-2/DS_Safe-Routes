@@ -33,13 +33,14 @@ day_week_dict = {
 }
 
 hour_dict = {0: '12 AM', 1: '1 AM', 2: '2 AM', 
-3: '3 AM', 4: '4 AM', 5: '5 AM', 6: '6 AM', 
-7: '7 AM', 8: '8 AM', 9: '9 AM', 10: '10 AM', 
-11: '11 AM', 12: '12 PM', 13: '1 PM', 14: '2 PM', 
-15: '3 PM', 16: '4 PM', 17: '5 PM', 18: '6 PM', 
-19: '7 PM', 20: '8 PM', 21: '9 PM', 22: '10 PM', 23: '11 PM'}
+            3: '3 AM', 4: '4 AM', 5: '5 AM', 6: '6 AM', 
+            7: '7 AM', 8: '8 AM', 9: '9 AM', 10: '10 AM', 
+            11: '11 AM', 12: '12 PM', 13: '1 PM', 14: '2 PM', 
+            15: '3 PM', 16: '4 PM', 17: '5 PM', 18: '6 PM', 
+            19: '7 PM', 20: '8 PM', 21: '9 PM', 22: '10 PM', 23: '11 PM'}
 
-month_dict = {1:'Jan', 2:'Feb', 3:'Mar', 4:'Apr', 5:'May', 6:'Jun', 7:'Jul', 8:'Aug', 9:'Sep', 10:'Oct', 11:'Nov', 12:'Dec'}
+month_dict = {1:'Jan', 2:'Feb', 3:'Mar', 4:'Apr', 5:'May', 6:'Jun', 
+            7:'Jul', 8:'Aug', 9:'Sep', 10:'Oct', 11:'Nov', 12:'Dec'}
 
 type_dict = {
        0: 'Not collision with motor vehicle',
@@ -109,7 +110,7 @@ def get_records(lat,lon):
     return df1
 
 def get_weather(lat, lon):
-    URL = f'http://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&APPID=0ef5128501f7664ab39ed4005c3eca8d'
+    URL = getenv('WEATHER_KEY')
     r = requests.get(URL)
     data = r.json()
     if 'weather' not in data:
