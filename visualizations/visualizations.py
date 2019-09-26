@@ -35,6 +35,7 @@ acc_city_state = acc_city_state.reset_index()
 
 # limit dataframe to top 100 cities with most crashes
 top_100 = acc_city_state.head(100)
+top_100 = top_100.replace(4120, 3382)
 
 
 # City/State dictionary to interpret city/state geocodes
