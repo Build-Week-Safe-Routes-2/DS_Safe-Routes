@@ -1,0 +1,19 @@
+This version of 2017 FARS annual file was compiled on 9/27/2018. 
+Starting from 2015 file release, there are two folders, one for national and one for Puerto Rico.
+Starting from 9/28/2018 file release, DBF format file is discontinuted. Only CSV and SAS version of FARS data will be available.
+Starting from 2014, Pedestrian and Bicyclist files are included in the file release.
+Auxiliary files are included in the SAS and CSV sets instead of as independent zip files.
+
+9/27/2018: files are released for FARS 2017 annual data.
+
+==========================
+FARS Auxiliary Files
+--------------------
+The FARS Auxiliary files are datasets that are derived from the standard FARS datasets: 
+1. Accident -> Acc_Aux
+2. Vehicle -> Veh_Aux
+3. Person -> Per_Aux
+These files are joined by the standard key variables.
+Please read the following document for additional details: http://www-nrd.nhtsa.dot.gov/Pubs/811364.pdf
+For User Manuals, please go to: ftp://ftp.nhtsa.dot.gov/FARS/FARS-Doc/FARS_Auxiliary_Analytical_User_Manuals.zip
+For SAS Format Catalog, please go to: ftp://ftp.nhtsa.dot.gov/FARS/Auxiliary_FARS_Files_Formats

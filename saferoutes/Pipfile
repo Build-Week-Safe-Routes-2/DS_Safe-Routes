@@ -15,6 +15,10 @@ gunicorn = "*"
 xgboost = "*"
 scikit-learn = "==0.21.2"
 joblib = "*"
+requests = "*"
+psycopg2 = "*"
+haversine = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.7"
