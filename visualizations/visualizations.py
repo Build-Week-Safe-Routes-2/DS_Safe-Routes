@@ -62,16 +62,29 @@ fig = go.Figure(data=go.Scattergeo(
         marker = dict(
             size = 8,
             opacity = 0.75,
-            reversescale = True,
+            reversescale = False,
             autocolorscale = False,
-            symbol = 'circle'),
-        marker_color = '#13F1FC',
+            symbol = 'circle',
+            line = dict(
+                width=.5,
+                color='rgba(102, 102, 102)'
+            ),
+            color = top_100['COUNT'],
+            colorscale = [[0,'rgb(230, 253, 255)'], 
+                          [0.25, 'rgb(155, 249, 253)'], 
+                          [0.5,'rgb(19, 241, 252)'], 
+                          [0.75, 'rgb(3, 191, 201)'], 
+                          [1.0,'rgb(2, 119, 126)']],
+            cmin = 0,
+            cmax = top_100['COUNT'].max(),
+            colorbar_title="Number of Accidents"),
         hoverinfo = 'text',
         ))
 
 fig.update_layout(
         geo_scope='usa',
+        title = {"text": "Top 100 US Cities<br><span style='font-size:0.8em;color:gray'>Recorded Car Accidents: 2015 - 2017</span>"}
     )
 fig.show()
 #plotly.offline.plot(fig, filename='top100.html')
-# plotly.offline.plot(fig, include_plotlyjs='cdn', filename='top100tt.html')
+#plotly.offline.plot(fig, include_plotlyjs='cdn', filename='top100.html')
