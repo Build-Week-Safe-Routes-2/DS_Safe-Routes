@@ -73,4 +73,5 @@ fig.update_layout(
         geo_scope='usa',
     )
 fig.show()
-plotly.offline.plot(fig, filename='top100.html')
+#plotly.offline.plot(fig, filename='top100.html')
+# plotly.offline.plot(fig, include_plotlyjs='cdn', filename='top100tt.html')
